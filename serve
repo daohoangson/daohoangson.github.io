@@ -1,0 +1,4 @@
+#!/bin/sh
+# Because I am forgetful <3
+
+bundle exec jekyll serve
