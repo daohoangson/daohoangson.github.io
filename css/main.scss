@@ -10,11 +10,16 @@
 
 $primaryColor: #6495ED;
 $faintColor: #fafafa;
+$cardBackground: #ffffff;
 
 $avatarWidth: 100px;
 
 body {
 	font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+	background: $cardBackground;
 }
 
 .faint {
@@ -88,4 +93,46 @@ body {
 		margin-top: 3px;
 		margin-left: 3px;
 	}
+}
+
+.header-row.collapsed {
+	.topbar {
+		height: 70px;
+	}
+
+	.placeholder {
+		display: block !important;
+	}
+
+	.profile.card {
+		background: $primaryColor;
+		position: fixed;
+		width: 100%;
+	}
+
+	.avatar {
+		float: left;
+		height: 50px;
+		margin: 10px 0;
+		width: 50px;
+	}
+
+	.email { display: none }
+
+	.social {
+		line-height: 40px;
+		margin: 15px 0;
+		width: auto;
+	}
+
+	.social .fa {
+		color: $faintColor;
+		font-size: 40px;
+	}
+	li:hover .fa {
+		color: inherit;
+	}
+
+	.social > * { width: auto;}
+	.social .username { display: none; }
 }
