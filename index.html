@@ -1,3 +1,6 @@
+---
+---
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -28,18 +31,9 @@
                     </h1>
 
                     <ul class="social row col-sm-offset-2 col-sm-8">
-                        <li class="blogger col-xs-6 col-sm-3"><a href="http://geek.daohoangson.com/" target="_blank"><i class="fa fa-laptop"></i><span class="username">&nbsp;geek.</span></a></li>
-                        <li class="facebook col-xs-6 col-sm-3"><a href="https://www.facebook.com/sondh" target="_blank"><i class="fa fa-facebook-official"></i><span class="username">&nbsp;sondh</span></a></li>
-                        <li class="foursquare col-xs-6 col-sm-3"><a href="https://foursquare.com/mrpaint" target="_blank"><i class="fa fa-foursquare"></i><span class="username">&nbsp;mrpaint</span></a></li>
-                        <li class="github col-xs-6 col-sm-3"><a href="https://github.com/daohoangson" target="_blank"><i class="fa fa-github-alt"></i><span class="username">&nbsp;daohoangson</span></a></li>
-                        <li class="hacker-news col-xs-6 col-sm-3"><a href="https://news.ycombinator.com/user?id=sondh" target="_blank"><i class="fa fa-hacker-news"></i><span class="username">&nbsp;sondh</span></a></li>
-                        <li class="instagram col-xs-6 col-sm-3"><a href="https://instagram.com/sondh/" target="_blank"><i class="fa fa-instagram"></i><span class="username">&nbsp;sondh</span></a></li>
-                        <li class="linkedin col-xs-6 col-sm-3"><a href="https://vn.linkedin.com/in/sondh" target="_blank"><i class="fa fa-linkedin-square"></i><span class="username">&nbsp;sondh</span></a></li>
-                        <li class="reddit col-xs-6 col-sm-3"><a href="http://www.reddit.com/user/mrpaint/" target="_blank"><i class="fa fa-reddit-square"></i><span class="username">&nbsp;mrpaint</span></a></li>
-                        <li class="stack-overflow col-xs-6 col-sm-3"><a href="http://stackoverflow.com/users/308114/mrpaint" target="_blank"><i class="fa fa-stack-overflow"></i><span class="username">&nbsp;mrpaint</span></a></li>
-                        <li class="tumblr col-xs-6 col-sm-3"><a href="http://blog.daohoangson.com/" target="_blank"><i class="fa fa-tumblr"></i><span class="username">&nbsp;blog.</span></a></li>
-                        <li class="twitter col-xs-6 col-sm-3"><a href="https://twitter.com/mrpaint" target="_blank"><i class="fa fa-twitter"></i><span class="username">&nbsp;mrpaint</span></a></li>
-                        <li class="youtube col-xs-6 col-sm-3"><a href="https://www.youtube.com/user/shmiluvu" target="_blank"><i class="fa fa-youtube"></i><span class="username">&nbsp;shmiluvu</span></a></li>
+                        {% for service in site.data.services %}
+                        <li class="{{ service.service }} col-xs-6 col-sm-3"><a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
+                        {% endfor %}
                     </ul>
                 </div><!-- .profile -->
                 <div class="placeholder topbar" style="display: none;"></div>
