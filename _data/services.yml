@@ -24,7 +24,7 @@
   fa: hacker-news
 
 - service: instagram
-  href: https://instagram.com/sondh/
+  href: https://instagram.com/sondh
   username: sondh
   fa: instagram
 
@@ -34,17 +34,17 @@
   fa: linkedin-square
 
 - service: reddit
-  href: http://www.reddit.com/user/mrpaint/
+  href: https://www.reddit.com/user/mrpaint
   username: mrpaint
   fa: reddit-square
 
 - service: stack-overflow
-  href: http://stackoverflow.com/users/308114/mrpaint
+  href: https://stackoverflow.com/users/308114/mrpaint
   username: mrpaint
   fa: stack-overflow
 
 - service: tumblr
-  href: http://blog.daohoangson.com/
+  href: http://blog.daohoangson.com
   username: blog.
   fa: tumblr
 
