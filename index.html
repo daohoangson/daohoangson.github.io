@@ -39,6 +39,42 @@
                 <div class="placeholder topbar" style="display: none;"></div>
                 <div class="placeholder" style="display: none; height: 15px;"></div>
             </div><!-- .header-row -->
+
+            <div class="row contents">
+                <div class="col-md-12">
+
+                    <h2 id="work">Things I have worked on</h2>
+                    <div class="works row">
+                        {% for work in site.data.works %}
+                        <div class="{{ work.work }} col-xs-12 col-sm-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="{{ work.href }}" target="_blank"><img src="{{ work.img }}" /></a>
+
+                                {% if work.skills %}
+                                <ul class="skills">
+                                    <li><i class="fa fa-star"></i></li>
+                                    {% for workSkill in work.skills %}
+                                    {% assign skill = site.data.skills[workSkill.skill] %}
+                                    <li class="{{ workSkill.skill }}">
+                                        {% if workSkill.href %}
+                                        <a href="{{ workSkill.href }}" target="_blank" class="name">{{ skill.name }}</a>
+                                        {% else %}
+                                        <span class="name">{{ skill.name }}</span>
+                                        {% endif %}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+
+                                <h3><a href="{{ work.href }}" target="_blank">{{ work.header }}</a></h3>
+                                <p>{{ work.body }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div><!-- .contents -->
         </div><!-- .container-fluid -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

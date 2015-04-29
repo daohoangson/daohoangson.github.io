@@ -140,3 +140,44 @@ body {
 	.social > * { width: auto;}
 	.social .username { display: none; }
 }
+
+.works {
+	.skills {
+		float: left;
+		font-size: 0.7em;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+
+			.name:after {
+				content: ',';
+			}
+		}
+
+		li:last-child .name:after {
+			content: '';
+		}
+	}
+
+	.thumbnail > * {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	h3, .skills {
+		white-space: nowrap;
+	}
+
+	h3 {
+		line-height: 1.3em;
+		margin-bottom: 0;
+	}
+
+	p {
+		height: 5em;
+	}
+}

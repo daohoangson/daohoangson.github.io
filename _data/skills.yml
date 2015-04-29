@@ -1,0 +1,23 @@
+android:
+  name: Android
+
+css3:
+  name: CSS3
+
+html5:
+  name: HTML5
+
+javascript:
+  name: JS
+
+ios:
+  name: iOS
+
+php:
+  name: PHP
+
+python:
+  name: Python
+
+startup:
+  name: Entrepreneurship
