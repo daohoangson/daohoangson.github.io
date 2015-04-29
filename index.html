@@ -16,14 +16,33 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="nav" data-offset="0">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#top">
+                        <img src="http://graph.facebook.com/sondh/picture" />
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#social">Social</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <a class="anchor" id="top"></a>
         <div class="container-fluid">
             <div class="row header-row">
-                <div class="col-md-12 profile card topbar">
+                <div class="col-md-12 profile card">
                     <img src="http://graph.facebook.com/sondh/picture?type=large" class="avatar" />
 
                     <h1 class="email">
@@ -31,19 +50,25 @@
                     </h1>
 
                     <ul class="social row col-sm-offset-2 col-sm-8">
+                        {% assign counter = 0 %}
                         {% for service in site.data.services %}
-                        <li class="{{ service.service }} col-xs-6 col-sm-3"><a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
+                        <li class="{{ service.service }} col-xs-6 col-sm-3">
+                            {% if counter == 0 %}
+                            <a class="anchor" id="social"></a>
+                            {% endif %}
+                            {% assign counter = counter | plus:1 %}
+                            <a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div><!-- .profile -->
-                <div class="placeholder topbar" style="display: none;"></div>
-                <div class="placeholder" style="display: none; height: 15px;"></div>
             </div><!-- .header-row -->
 
             <div class="row contents">
                 <div class="col-md-12">
 
-                    <h2 id="work">Things I have worked on:</h2>
+                    <a class="anchor" id="work"></a>
+                    <h2>Things I have worked on:</h2>
                     <div class="works row">
                         {% for work in site.data.works %}
                         <div class="{{ work.work }} col-xs-12 col-sm-6 col-md-3">
@@ -73,15 +98,16 @@
                         {% endfor %}
                     </div>
 
-                    <h2 id="skill">TL;DR: I am good at these:</h2>
+                    <a class="anchor" id="skill"></a>
+                    <h2>TL;DR: I am good at these:</h2>
                     <div class="skills">
                         {% for _skill in site.data.skills %}
                         {% assign skillCode = _skill[0] %}
                         {% assign skill = _skill[1] %}
                         {% if skill.rating > 2 %}
                         <div class="{{ skillCode }} row">
-                            <div class="name col-xs-8 col-sm-4 col-md-2">{{ skill.name }}</div>
-                            <div class="rating col-xs-4 col-sm-4 col-md-2">
+                            <div class="name col-xs-6 col-sm-4 col-md-2">{{ skill.name }}</div>
+                            <div class="rating col-xs-6 col-sm-4 col-md-2">
                                 {% assign skillRatingAndHalf = skill.rating | plus:0.5 %}
                                 {% for i in (1..5) %}
                                 {% if skill.rating >= i %}
