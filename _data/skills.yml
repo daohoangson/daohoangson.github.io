@@ -1,23 +1,31 @@
 android:
   name: Android
+  rating: 3
 
 css3:
   name: CSS3
+  rating: 2.5
 
 html5:
   name: HTML5
+  rating: 3
 
 javascript:
   name: JS
+  rating: 3.5
 
 ios:
   name: iOS
+  rating: 2.5
 
 php:
   name: PHP
+  rating: 4
 
 python:
   name: Python
+  rating: 2.5
 
 startup:
   name: Entrepreneurship
+  rating: 2
