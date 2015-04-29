@@ -53,11 +53,11 @@
                         {% assign counter = 0 %}
                         {% for service in site.data.services %}
                         <li class="{{ service.service }} col-xs-6 col-sm-3">
+                            <a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a>
                             {% if counter == 0 %}
                             <a class="anchor" id="social"></a>
                             {% endif %}
                             {% assign counter = counter | plus:1 %}
-                            <a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a>
                         </li>
                         {% endfor %}
                     </ul>
