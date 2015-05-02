@@ -10,7 +10,7 @@
 
 - service: foursquare
   href: https://foursquare.com/mrpaint
-  username: foursquare
+  username: mrpaint
   fa: foursquare
 
 - service: github
