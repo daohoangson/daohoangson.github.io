@@ -32,7 +32,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li><a href="#social">Social</a></li>
-                            <li><a href="#work">Works</a></li>
+                            <li><a href="#work">Projects</a></li>
                             <li><a href="#skill">Skills</a></li>
                         </ul>
                     </div>
@@ -41,7 +41,7 @@
         </div>
 
         <a class="anchor" id="top"></a>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row header-row">
                 <div class="col-md-12 profile card">
                     <img src="//graph.facebook.com/sondh/picture?type=large" class="avatar" />
@@ -53,7 +53,7 @@
                     <a class="anchor" id="social"></a>
                     <ul class="social row col-sm-offset-2 col-sm-8">
                         {% for service in site.data.services %}
-                        <li class="{{ service.service }} col-xs-6 col-sm-3"><a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
+                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
                         {% endfor %}
                     </ul>
                 </div><!-- .profile -->
@@ -62,8 +62,23 @@
             <div class="row contents">
                 <div class="col-md-12">
 
+                    <h2>Who am I?</h2>
+                    <div class="about">
+                        <p>
+                            I'm a <strong>software developer</strong> and have been working on the field since 2006.
+                            Being experienced in a wide range of roles and working with many technologies, I have deep knowledge
+                            on how to build a product from idea to success. I'm familiar with all layers of the software stack
+                            with strong focus on the backend logic, user experience (web <em>and</em> mobile). Grab my <a href="http://files.daohoangson.com/public/cv/" target="_blank">CV</a> for detailed work experiences.
+                        </p>
+                        <p>
+                            I consider myself a keen learner having genuine interest in technologies, especially those that
+                            are new and challenging. Get to know me more on the social networks or read my blogs.
+                            Maybe follow me on <a href="https://github.com/daohoangson" target="_blank">github</a> too? I contribute to OSS projects occasionally.
+                        </p>
+                    </div>
+
                     <a class="anchor" id="work"></a>
-                    <h2>Things I have worked on:</h2>
+                    <h2>Personal projects that I worked on:</h2>
                     <div class="works row">
                         {% for work in site.data.works %}
                         <div class="{{ work.work }} col-xs-12 col-sm-6 col-md-3">
@@ -94,7 +109,7 @@
                     </div>
 
                     <a class="anchor" id="skill"></a>
-                    <h2>TL;DR: I am good at these:</h2>
+                    <h2><span title="Too long; Didn't read" class="Tooltip">TL;DR</span>: I am good at...</h2>
                     <div class="skills">
                         {% for _skill in site.data.skills %}
                         {% assign skillCode = _skill[0] %}

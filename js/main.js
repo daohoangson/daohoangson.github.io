@@ -33,4 +33,7 @@
 	};
 	$document.scroll(documentScroll);
 
+	// tooltips
+	$('.Tooltip').tooltip();
+
 })(jQuery, document, this);

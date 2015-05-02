@@ -15,7 +15,7 @@
     <a href="https://addons.mozilla.org/en-US/firefox/addon/no-clickjacking/" target="_blank">Firefox</a>,
     <a href="https://chrome.google.com/webstore/detail/clickjacking-reveal/ecillfeckjnmpgfdabblnebhibndmnho" target="_blank">Google Chrome</a>,
     and <a href="https://s3.amazonaws.com/sondh/no-clickjacking/no-clickjacking.safariextz" target="_blank">Safari</a>
-    extension to avoid social network clickjacking from malicious websites.
+    extension to avoid social network clickjacking.
   skills:
     - skill: javascript
 
@@ -33,7 +33,7 @@
   href: http://files.daohoangson.com/public/20120529_thesis/
   img: images/works/thesis.png
   header: Koluto
-  body: My thesis about a news aggregator system with focus on Vietnamese NLP and trending detection.
+  body: My thesis studying Vietnamese NLP and trending detection.
   skills:
     - skill: javascript
       href: https://github.com/daohoangson/koluto-platform
