@@ -5,6 +5,7 @@
 	var $body = $('body');
 	var $nav = $('nav');
 
+	// toggle navbar as viewer scrolls down the page
 	var showNavLimit = $('.profile.card .email').position().top;
 	var navShown = false;
 	var scrollSpy = false;
@@ -32,6 +33,22 @@
 		}
 	};
 	$document.scroll(documentScroll);
+
+	// track outbound link events with Google Analytics
+	// https://support.google.com/analytics/answer/1136920?hl=en
+	var trackOutboundLink = function(e) {
+		if (typeof ga == 'undefined') {
+			return;
+		}
+
+		var $link = $(e.currentTarget);
+		var url = ($link.attr('target') == '_blank' ? $link.attr('href') : '');
+
+		if (url) {
+			ga('send', 'event', 'outbound', 'click', url);
+		}
+	}
+	$('a').click(trackOutboundLink);
 
 	// tooltips
 	$('.Tooltip').tooltip();
