@@ -15,28 +15,30 @@
         <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css?v={{ site.time | date: '%s' }}">
     </head>
-    <body data-spy="scroll" data-target="nav" data-offset="0">
+    <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#top">
-                        <img src="//graph.facebook.com/sondh/picture" />
-                    </a>
-                </div>
+        <div class="nav-container visible-md-block visible-lg-block">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#top">
+                            <img src="//graph.facebook.com/sondh/picture" />
+                        </a>
+                    </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#social">Social</a></li>
-                        <li><a href="#work">Works</a></li>
-                        <li><a href="#skill">Skills</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#social">Social</a></li>
+                            <li><a href="#work">Works</a></li>
+                            <li><a href="#skill">Skills</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <a class="anchor" id="top"></a>
         <div class="container-fluid">
@@ -48,16 +50,10 @@
                         <span>d</span><span>a</span><span>o</span><span class="faint">@</span><span>h</span><span>o</span><span>a</span><span>n</span><span>g</span><span class="letter-s">s</span><span>o</span><span>n</span><span class="faint">.</span><span class="faint">v</span><span class="faint">n</span>
                     </h1>
 
+                    <a class="anchor" id="social"></a>
                     <ul class="social row col-sm-offset-2 col-sm-8">
-                        {% assign counter = 0 %}
                         {% for service in site.data.services %}
-                        <li class="{{ service.service }} col-xs-6 col-sm-3">
-                            <a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a>
-                            {% if counter == 0 %}
-                            <a class="anchor" id="social"></a>
-                            {% endif %}
-                            {% assign counter = counter | plus:1 %}
-                        </li>
+                        <li class="{{ service.service }} col-xs-6 col-sm-3"><a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
                         {% endfor %}
                     </ul>
                 </div><!-- .profile -->

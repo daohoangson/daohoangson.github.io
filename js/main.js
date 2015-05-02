@@ -4,24 +4,29 @@
 	var $window = $(window);
 	var $body = $('body');
 	var $nav = $('nav');
-	var profileCardHeight = $('.profile.card').height();
 
+	var showNavLimit = $('.profile.card .email').position().top;
 	var navShown = false;
+	var scrollSpy = false;
 	var documentScroll = function(e) {
 		var scrollTop = $document.scrollTop();
 
-		if (scrollTop > profileCardHeight / 2) {
+		if (scrollTop > showNavLimit) {
 			if (!navShown) {
 				$body.addClass('show-nav');
-				$nav.addClass('visible-md-block');
-				$nav.addClass('visible-lg-block');
 				navShown = true;
+
+				if (!scrollSpy) {
+					$body.scrollspy({
+						target: 'nav',
+						offset: 0
+					});
+					scrollSpy = true;
+				}
 			}
 		} else {
 			if (navShown) {
 				$body.removeClass('show-nav');
-				$nav.removeClass('visible-md-block');
-				$nav.removeClass('visible-lg-block');
 				navShown = false;
 			}
 		}
