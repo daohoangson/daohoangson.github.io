@@ -1,7 +1,3 @@
-english:
-  name: English
-  rating: 4
-
 android:
   name: Android
   rating: 3
@@ -33,6 +29,10 @@ python:
 startup:
   name: Entrepreneurship
   rating: 2
+
+english:
+  name: English
+  rating: 3.5
 
 husband:
   name: Being A Husband
