@@ -6,6 +6,10 @@ css3:
   name: CSS3
   rating: 2.5
 
+golang:
+  name: Golang
+  rating: 2
+
 html5:
   name: HTML5
   rating: 3

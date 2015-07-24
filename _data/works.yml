@@ -7,6 +7,15 @@
     - skill: php
     - skill: startup
 
+- work: socialcounters
+  href: https://hoangson.vn/go-socialcounters/
+  img: images/works/socialcounters.png
+  header: Social Counters
+  body: Consistent and fast url counters for Facebook, Twitter and Google+
+  skills:
+    - skill: golang
+    - skill: javascript
+
 - work: no-clickjacking
   href: https://github.com/daohoangson/no-clickjacking
   img: images/works/no-clickjacking.png
