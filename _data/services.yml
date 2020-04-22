@@ -8,20 +8,10 @@
   username: sondh
   fa: facebook-official
 
-- service: foursquare
-  href: https://foursquare.com/mrpaint
-  username: mrpaint
-  fa: foursquare
-
 - service: github
   href: https://github.com/daohoangson
   username: daohoangson
   fa: github-alt
-
-- service: hacker-news
-  href: https://news.ycombinator.com/user?id=sondh
-  username: sondh
-  fa: hacker-news
 
 - service: instagram
   href: https://instagram.com/sondh
@@ -32,11 +22,6 @@
   href: https://vn.linkedin.com/in/sondh
   username: sondh
   fa: linkedin-square
-
-- service: reddit
-  href: https://www.reddit.com/user/mrpaint
-  username: mrpaint
-  fa: reddit-square
 
 - service: stack-overflow
   href: https://stackoverflow.com/users/308114/mrpaint
@@ -52,8 +37,3 @@
   href: https://twitter.com/mrpaint
   username: mrpaint
   fa: twitter
-
-- service: youtube
-  href: https://www.youtube.com/user/shmiluvu
-  username: shmiluvu
-  fa: youtube
