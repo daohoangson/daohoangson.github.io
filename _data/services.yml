@@ -1,27 +1,27 @@
 - service: blogger
   href: http://geek.daohoangson.com/
   username: geek.
-  fa: laptop
+  fa: blogger
 
 - service: facebook
   href: https://www.facebook.com/sondh
   username: sondh
-  fa: facebook-official
+  fa: facebook-square
 
 - service: github
   href: https://github.com/daohoangson
   username: daohoangson
-  fa: github-alt
+  fa: github-square
 
 - service: instagram
   href: https://instagram.com/sondh
   username: sondh
-  fa: instagram
+  fa: instagram-square
 
 - service: linkedin
   href: https://vn.linkedin.com/in/sondh
   username: sondh
-  fa: linkedin-square
+  fa: linkedin
 
 - service: stack-overflow
   href: https://stackoverflow.com/users/308114/mrpaint
@@ -31,9 +31,9 @@
 - service: tumblr
   href: http://blog.daohoangson.com
   username: blog.
-  fa: tumblr
+  fa: tumblr-square
 
 - service: twitter
   href: https://twitter.com/mrpaint
   username: mrpaint
-  fa: twitter
+  fa: twitter-square

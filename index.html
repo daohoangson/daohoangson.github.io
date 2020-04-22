@@ -27,9 +27,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css?v={{ site.time | date: '%s' }}">
+
+        <script src="https://kit.fontawesome.com/cedcd97631.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -69,7 +70,7 @@
                     <a class="anchor" id="social"></a>
                     <ul class="social row col-sm-offset-2 col-sm-8">
                         {% for service in site.data.services %}
-                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
+                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" target="_blank"><i class="fab fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
                         {% endfor %}
                     </ul>
                 </div><!-- .profile -->
@@ -104,7 +105,6 @@
 
                                 {% if work.skills %}
                                 <ul class="skills">
-                                    <li><i class="fa fa-star"></i></li>
                                     {% for workSkill in work.skills %}
                                     {% assign skill = site.data.skills[workSkill.skill] %}
                                     <li class="{{ workSkill.skill }}">
@@ -138,12 +138,12 @@
                                 {% assign skillRatingAndHalf = skill.rating | plus:0.5 %}
                                 {% for i in (1..5) %}
                                 {% if skill.rating >= i %}
-                                <i class="fa fa-star"></i>
+                                <i class="fas fa-star"></i>
                                 {% else %}
                                 {% if skillRatingAndHalf >= i %}
-                                <i class="fa fa-star-half-o"></i>
+                                <i class="fas fa-star-half-alt"></i>
                                 {% else %}
-                                <i class="fa fa-star-o"></i>
+                                <i class="far fa-star"></i>
                                 {% endif %}
                                 {% endif %}
                                 {% endfor %}

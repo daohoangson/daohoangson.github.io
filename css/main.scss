@@ -73,7 +73,14 @@ body {
 		white-space: nowrap;
 	}
 
-	a { color: inherit; }
+	a {
+		color: inherit;
+
+		svg, i {
+			display: inline-block;
+			width: 1em !important;
+		}
+	}
 
 	.facebook { color: #3b5998; }
 	.github { color: #333; }
@@ -167,6 +174,14 @@ body.show-nav {
 .skills {
 	.name {
 		text-align: right;
+	}
+
+	.rating {
+		i {
+			display: inline-block;
+			text-align: center;
+			width: 1.1em;
+		}
 	}
 }
 
