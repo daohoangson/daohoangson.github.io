@@ -1,5 +1,5 @@
 - service: blogger
-  href: http://geek.daohoangson.com/
+  href: https://geek.daohoangson.com/
   username: geek.
   fa: blogger
 
@@ -29,7 +29,7 @@
   fa: stack-overflow
 
 - service: tumblr
-  href: http://blog.daohoangson.com
+  href: https://blog.daohoangson.com
   username: blog.
   fa: tumblr-square
 

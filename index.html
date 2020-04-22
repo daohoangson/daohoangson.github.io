@@ -2,12 +2,15 @@
 ---
 
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HOANGSON.VN</title>
         <meta name="description" content="Dao Hoang Son - Full Stack Developer">
+
+        <link rel="dns-prefetch" href="https://kit-pro.fontawesome.com">
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
         <meta property="og:url" content="https://hoangson.vn" />
         <meta property="og:title" content="Dao Hoang Son" />
@@ -26,11 +29,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
         <link rel="stylesheet" href="css/main.css?v={{ site.time | date: '%s' }}">
-
-        <script src="https://kit.fontawesome.com/cedcd97631.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -42,7 +43,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#top">
-                            <img src="//graph.facebook.com/792241434/picture" />
+                            <img src="//graph.facebook.com/792241434/picture" alt="Dao Hoang Son's avatar" />
                         </a>
                     </div>
 
@@ -61,7 +62,7 @@
         <div class="container">
             <div class="row header-row">
                 <div class="col-md-12 profile card">
-                    <img src="//graph.facebook.com/792241434/picture?type=large" class="avatar" />
+                    <img src="//graph.facebook.com/792241434/picture?type=large" class="avatar" alt="Dao Hoang Son's large avatar" />
 
                     <h1 class="email">
                         <span>d</span><span>a</span><span>o</span><span class="faint">@</span><span>h</span><span>o</span><span>a</span><span>n</span><span>g</span><span class="letter-s">s</span><span>o</span><span>n</span><span class="faint">.</span><span class="faint">v</span><span class="faint">n</span>
@@ -70,7 +71,7 @@
                     <a class="anchor" id="social"></a>
                     <ul class="social row col-sm-offset-2 col-sm-8">
                         {% for service in site.data.services %}
-                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" target="_blank"><i class="fab fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
+                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" rel="noopener" target="_blank"><i class="fab fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
                         {% endfor %}
                     </ul>
                 </div><!-- .profile -->
@@ -87,11 +88,11 @@
                             how to build a product from idea to success.
                             I'm familiar with all layers of the software stack with strong focus on backend logic
                             and user experience (web <em>and</em> mobile).
-                            Grab my <a href="http://files.daohoangson.com/public/cv/" target="_blank">CV</a> for a more detailed record of my experiences.
+                            Grab my <a href="http://files.daohoangson.com/public/cv/" rel="noopener" target="_blank">CV</a> for a more detailed record of my experiences.
                         </p>
                         <p>
                             I consider myself a keen learner having genuine interest in technologies, especially those that are new and challenging.
-                            Maybe follow me on <a href="https://github.com/daohoangson" target="_blank">github</a> too? I contribute to OSS projects occasionally.
+                            Maybe follow me on <a href="https://github.com/daohoangson" rel="noopener" target="_blank">github</a> too? I contribute to OSS projects occasionally.
                         </p>
                     </div>
 
@@ -101,7 +102,7 @@
                         {% for work in site.data.works %}
                         <div class="{{ work.work }} col-xs-12 col-sm-6 col-md-3">
                             <div class="thumbnail">
-                                <a href="{{ work.href }}" target="_blank"><img src="{{ work.img }}" /></a>
+                                <a href="{{ work.href }}" rel="noopener" target="_blank"><img src="{{ work.img }}" alt="{{ work.header }} thumbnail" /></a>
 
                                 {% if work.skills %}
                                 <ul class="skills">
@@ -109,7 +110,7 @@
                                     {% assign skill = site.data.skills[workSkill.skill] %}
                                     <li class="{{ workSkill.skill }}">
                                         {% if workSkill.href %}
-                                        <a href="{{ workSkill.href }}" target="_blank" class="name">{{ skill.name }}</a>
+                                        <a href="{{ workSkill.href }}" rel="noopener" target="_blank" class="name">{{ skill.name }}</a>
                                         {% else %}
                                         <span class="name">{{ skill.name }}</span>
                                         {% endif %}
@@ -118,7 +119,7 @@
                                 </ul>
                                 {% endif %}
 
-                                <h3><a href="{{ work.href }}" target="_blank">{{ work.header }}</a></h3>
+                                <h3><a href="{{ work.href }}" rel="noopener" target="_blank">{{ work.header }}</a></h3>
                                 <p>{{ work.body }}</p>
                             </div>
                         </div>
@@ -154,17 +155,17 @@
                     </div>
 
                     <div class="qr">
-                        <a href="//hoangson.vn"><img src="images/qr.png" width="150" height="150" /></a>
+                        <a href="//hoangson.vn"><img src="images/qr.png" width="150" height="150" alt="QR code" /></a>
                     </div>
 
                 </div>
             </div><!-- .contents -->
         </div><!-- .container-fluid -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script src="js/main.js?v={{ site.time | date: '%s' }}"></script>
+        <script src="https://kit.fontawesome.com/cedcd97631.js" crossorigin="anonymous"></script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

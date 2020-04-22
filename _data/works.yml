@@ -29,25 +29,25 @@
   img: images/works/no-clickjacking.png
   header: no-clickjacking
   body: |
-    <a href="https://addons.mozilla.org/en-US/firefox/addon/no-clickjacking/" target="_blank">Firefox</a>,
-    <a href="https://chrome.google.com/webstore/detail/clickjacking-reveal/ecillfeckjnmpgfdabblnebhibndmnho" target="_blank">Google Chrome</a>,
-    and <a href="https://s3.amazonaws.com/sondh/no-clickjacking/no-clickjacking.safariextz" target="_blank">Safari</a>
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/no-clickjacking/" rel="noopener" target="_blank">Firefox</a>,
+    <a href="https://chrome.google.com/webstore/detail/clickjacking-reveal/ecillfeckjnmpgfdabblnebhibndmnho" rel="noopener" target="_blank">Google Chrome</a>,
+    and <a href="https://s3.amazonaws.com/sondh/no-clickjacking/no-clickjacking.safariextz" rel="noopener" target="_blank">Safari</a>
     extension to avoid social network clickjacking.
   skills:
     - skill: javascript
 
 - work: scroll
-  href: http://scroll.ponology.com
+  href: https://scroll.ponology.com
   img: images/works/scroll.png
   header: Sylvie &amp; Pon
-  body: One of the websites designed for my wedding. Some other cute fun mini-sites are <a href="http://ponology.com/" target="_blank">here</a>.
+  body: One of the websites designed for my wedding. Some other <a href="https://ponology.com/" rel="noopener" target="_blank">cute fun mini-sites are available at ponology.com</a>.
   skills:
     - skill: html5
     - skill: css3
     - skill: javascript
 
 - work: thesis
-  href: http://files.daohoangson.com/public/20120529_thesis/
+  href: https://files.daohoangson.com/public/20120529_thesis/
   img: images/works/thesis.png
   header: Koluto
   body: My thesis studying Vietnamese NLP and trending detection.
@@ -60,7 +60,7 @@
       href: https://github.com/daohoangson/koluto-demo-front-end
 
 - work: chaocovietnam
-  href: http://chaocovietnam.net
+  href: https://chaocovietnam.net
   img: images/works/chaocovietnam.png
   header: chaocovietnam.net
   body: Bringing national raising flag ceremony to as many people as possible.
@@ -74,7 +74,7 @@
       href: https://github.com/daohoangson/chaocovietnam-ios
 
 - work: cv
-  href: http://files.daohoangson.com/public/cv/
+  href: https://files.daohoangson.com/public/cv/
   img: images/works/cv.png
   header: Curriculum vitae
   body: Download the latest CV to see detailed information.
