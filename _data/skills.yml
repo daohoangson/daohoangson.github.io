@@ -6,6 +6,10 @@ css3:
   name: CSS3
   rating: 2.5
 
+flutter:
+  name: Flutter
+  rating: 3
+
 golang:
   name: Golang
   rating: 2

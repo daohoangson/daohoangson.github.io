@@ -7,6 +7,14 @@
     - skill: php
     - skill: startup
 
+- work: flutter_widget_from_html
+  href: https://github.com/daohoangson/flutter_widget_from_html
+  img: images/works/flutter_widget_from_html.png
+  header: Widget From HTML
+  body: A Flutter plugin to render HTML as widgets.
+  skills:
+    - skill: flutter
+
 - work: socialcounters
   href: https://hoangson.vn/go-socialcounters/
   img: images/works/socialcounters.png

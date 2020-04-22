@@ -131,7 +131,7 @@
                         {% for _skill in site.data.skills %}
                         {% assign skillCode = _skill[0] %}
                         {% assign skill = _skill[1] %}
-                        {% if skill.rating > 2 %}
+                        {% if skill.rating > 2.5 %}
                         <div class="{{ skillCode }} row">
                             <div class="name col-xs-6 col-sm-4 col-md-2">{{ skill.name }}</div>
                             <div class="rating col-xs-6 col-sm-4 col-md-2">
