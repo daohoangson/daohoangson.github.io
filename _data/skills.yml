@@ -34,6 +34,10 @@ python:
   name: Python
   rating: 2.5
 
+shell:
+  name: Shell script
+  rating: 3
+
 startup:
   name: Entrepreneurship
   rating: 2
