@@ -1,6 +1,6 @@
 android:
   name: Android
-  rating: 3
+  rating: 2.5
 
 css3:
   name: CSS3
@@ -12,19 +12,19 @@ flutter:
 
 golang:
   name: Golang
-  rating: 2
+  rating: 3
 
 html5:
   name: HTML5
-  rating: 3
+  rating: 2.5
 
 javascript:
-  name: JS
+  name: JavaScript
   rating: 3.5
 
 ios:
   name: iOS
-  rating: 2.5
+  rating: 2
 
 php:
   name: PHP
