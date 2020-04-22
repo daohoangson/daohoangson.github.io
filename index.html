@@ -102,7 +102,7 @@
                         {% for work in site.data.works %}
                         <div class="{{ work.work }} col-xs-12 col-sm-6 col-md-3">
                             <div class="thumbnail">
-                                <a href="{{ work.href }}" rel="noopener" target="_blank"><img src="{{ work.img }}" alt="{{ work.header }} thumbnail" /></a>
+                                <a href="{{ work.href }}" rel="noopener" target="_blank"><img src="{{ work.img }}" width="500" height="300" alt="{{ work.header }} thumbnail" loading="lazy" /></a>
 
                                 {% if work.skills %}
                                 <ul class="skills">
@@ -155,7 +155,7 @@
                     </div>
 
                     <div class="qr">
-                        <a href="//hoangson.vn"><img src="images/qr.png" width="150" height="150" alt="QR code" /></a>
+                        <a href="//hoangson.vn"><img src="images/qr.png" width="150" height="150" alt="QR code" loading="lazy" /></a>
                     </div>
 
                 </div>
