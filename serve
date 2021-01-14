@@ -5,4 +5,4 @@ exec docker run --rm -it \
   -v "$PWD:$PWD" -w "$PWD" \
   -e BUNDLE_PATH=/root/.bundle -v "$PWD/.bundle:/root/.bundle" \
   -p 4000:4000 \
-  ruby:2.7.1-buster /bin/bash -c 'bundle check && bundle exec jekyll serve --host 0.0.0.0'
+  ruby /bin/bash -c 'bundle install && bundle exec jekyll serve --host 0.0.0.0'

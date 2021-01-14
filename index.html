@@ -9,7 +9,8 @@
         <title>HOANGSON.VN</title>
         <meta name="description" content="Dao Hoang Son - Full Stack Developer">
 
-        <link rel="dns-prefetch" href="https://kit-pro.fontawesome.com">
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
         <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
         <meta property="og:url" content="https://hoangson.vn" />
@@ -29,8 +30,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css?v={{ site.time | date: '%s' }}">
     </head>
     <body>
@@ -71,7 +73,7 @@
                     <a class="anchor" id="social"></a>
                     <ul class="social row col-sm-offset-2 col-sm-8">
                         {% for service in site.data.services %}
-                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" rel="noopener" target="_blank"><i class="fab fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
+                        <li class="{{ service.service }} col-xs-6 col-sm-4 col-md-3"><a href="{{ service.href }}" rel="noopener" target="_blank"><i class="fa fa-{{ service.fa }}"></i><span class="username">&nbsp;{{ service.username }}</span></a></li>
                         {% endfor %}
                     </ul>
                 </div><!-- .profile -->
@@ -139,12 +141,12 @@
                                 {% assign skillRatingAndHalf = skill.rating | plus:0.5 %}
                                 {% for i in (1..5) %}
                                 {% if skill.rating >= i %}
-                                <i class="fas fa-star"></i>
+                                <i class="fa fa-star"></i>
                                 {% else %}
                                 {% if skillRatingAndHalf >= i %}
-                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fa fa-star-half-o"></i>
                                 {% else %}
-                                <i class="far fa-star"></i>
+                                <i class="fa fa-star-o"></i>
                                 {% endif %}
                                 {% endif %}
                                 {% endfor %}
@@ -165,7 +167,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <script src="js/main.js?v={{ site.time | date: '%s' }}"></script>
-        <script src="https://kit.fontawesome.com/cedcd97631.js" crossorigin="anonymous"></script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
