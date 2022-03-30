@@ -31,12 +31,14 @@ body {
 }
 
 .avatar {
-	display: block;
-	height: $avatarWidth;
-	margin: 30px auto 0 auto;
-	width: $avatarWidth;
+	img {
+		display: block;
+		height: $avatarWidth;
+		margin: 30px auto 0 auto;
+		width: $avatarWidth;
 
-	@include border-radius($avatarWidth);
+		@include border-radius($avatarWidth);
+	}
 }
 
 .email {
@@ -109,11 +111,13 @@ nav {
 		padding-top: 5px;
 		padding-bottom: 5px;
 
-		img {
-			height: 40px;
-			width: 40px;
+		.mini-avatar {
+			img {
+				height: 40px;
+				width: 40px;
 
-			@include border-radius(40px);
+				@include border-radius(40px);
+			}
 		}
 	}
 }
