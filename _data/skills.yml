@@ -8,23 +8,23 @@ css3:
 
 flutter:
   name: Flutter
-  rating: 3
+  rating: 4
 
 golang:
   name: Golang
-  rating: 3
+  rating: 2
 
 html5:
   name: HTML5
   rating: 2.5
 
-javascript:
-  name: JavaScript
-  rating: 3.5
-
 ios:
   name: iOS
   rating: 2
+
+javascript:
+  name: JavaScript
+  rating: 3.5
 
 php:
   name: PHP
@@ -32,11 +32,11 @@ php:
 
 python:
   name: Python
-  rating: 2.5
+  rating: 2
 
 shell:
   name: Shell script
-  rating: 3
+  rating: 2
 
 startup:
   name: Entrepreneurship
@@ -44,7 +44,7 @@ startup:
 
 english:
   name: English
-  rating: 3.5
+  rating: 3
 
 husband:
   name: Being A Husband
