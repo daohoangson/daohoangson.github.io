@@ -3,20 +3,10 @@
   username: geek.
   fa: laptop
 
-- service: facebook
-  href: https://www.facebook.com/sondh
-  username: sondh
-  fa: facebook-official
-
 - service: github
   href: https://github.com/daohoangson
   username: daohoangson
   fa: github-alt
-
-- service: instagram
-  href: https://instagram.com/sondh
-  username: sondh
-  fa: instagram
 
 - service: linkedin
   href: https://vn.linkedin.com/in/sondh
